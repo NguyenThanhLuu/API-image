@@ -1,5 +1,4 @@
 ## How application work 
-
 1. Run app
    1. Use script "npm run start" to run app and open browser at localhost:3000
    2. See example on screen 
@@ -15,4 +14,6 @@
    1. Run lint app with script "npm run lint"
 4. Run prettier
    1. Run prettier to format again app with script "npm run prettier"
+5. Endpoint use in project 
+   1. http://localhost:3001/api/images?fileName=tayson&width=400&height=200
 

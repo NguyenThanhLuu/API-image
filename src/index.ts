@@ -2,7 +2,7 @@ import express from "express";
 import ImageRouter from "./routers/image.router";
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 app.use("/api/images", ImageRouter);
 
@@ -14,7 +14,7 @@ app.use("/", (req, res): void => {
   );
 });
 
-app.listen(port, () => {
+app.listen(port, (): void => {
   console.log(`server started at http://localhost:${port}`);
 });
 
