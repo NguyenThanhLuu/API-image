@@ -1,4 +1,4 @@
-import { Router } from "express";
+import express, { Router } from "express";
 import path from "path";
 import fs from "fs";
 
@@ -7,7 +7,7 @@ import { ImageRoutes } from "../modules/image-routes.component";
 
 const router = Router();
 
-router.get("/", async (req, res): Promise<void> => {
+router.get("/", async (req: express.Request, res: express.Response): Promise<void> => {
   try {
     const { fileName, width, height } = req.query;
 
